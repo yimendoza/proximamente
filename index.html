@@ -15,19 +15,21 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             height: 100vh;
             text-align: center;
         }
+        header {
+            margin-top: 20px; /* Ajusta la distancia desde el borde superior */
+        }
         header img {
-            max-width: 100px; /* Tamaño del logo */
-            margin-bottom: 100px; /* Espacio entre el logo y el texto */
+            max-width: 120px; /* Tamaño del logo */
         }
         h1 {
             font-size: 3em;
             color: white; /* Título "Próximamente" en blanco */
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         p {
             font-size: 1.2em;
@@ -36,14 +38,13 @@
             padding: 10px 20px; /* Espaciado dentro del fondo */
             border-radius: 5px; /* Bordes redondeados */
             font-weight: bold; /* Texto en negrita */
-            margin-bottom: 40px;
         }
         footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 0.9em;
-            color: white;
+            background-color: black; /* Fondo negro para el pie de página */
+            width: 100%; /* Ocupa todo el ancho de la página */
+            padding: 10px 0; /* Espaciado dentro del pie de página */
             text-align: center;
+            color: white;
         }
         footer a {
             color: white; /* Enlaces en blanco */
@@ -57,28 +58,5 @@
         .contact-email {
             margin-top: 10px;
             font-size: 1em;
-            color: white; /* Texto del correo en blanco */
         }
     </style>
-</head>
-<body>
-    <header>
-        <img src="logo2.png" alt="Logo de Empleos Argentina Web"> <!-- Ruta al logo -->
-    </header>
-    <div>
-        <h1>¡Próximamente!</h1>
-        <p>Estamos trabajando en algo increíble. Vuelve pronto para más actualizaciones.</p>
-    </div>
-    <footer>
-        <a href="terms.html">Términos y Condiciones</a>
-        |
-        <a href="privacy.html">Política de Privacidad</a>
-        <div class="contact-email">
-            ¿Tienes preguntas? Escríbenos a: 
-            <a href="mailto:info@empleosargentinaweb.com" style="color: white; text-decoration: underline;">
-                info@empleosargentinaweb.com
-            </a>
-        </div>
-    </footer>
-</body>
-</html>
